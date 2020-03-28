@@ -1,8 +1,7 @@
 stage 'CI'
 node {
 
-    git branch: 'jenkins2-course', 
-        url: 'https://github.com/g0t4/solitaire-systemjs-course'
+   checkout scm
 
     // pull dependencies from npm
     bat 'npm install'
